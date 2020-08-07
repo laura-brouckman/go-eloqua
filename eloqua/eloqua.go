@@ -46,6 +46,7 @@ type Client struct {
 	CustomObjects      *CustomObjectService
 	CustomObjectData   *CustomObjectDataService
 	Emails             *EmailService
+	EmailDeployments   *EmailDeploymentService
 	EmailFolders       *EmailFolderService
 	EmailGroups        *EmailGroupService
 	EmailHeaders       *EmailHeaderService
@@ -91,6 +92,7 @@ func NewClient(baseURL string, companyName string, userName string, password str
 	c.CustomObjects = &CustomObjectService{client: c}
 	c.CustomObjectData = &CustomObjectDataService{client: c}
 	c.Emails = &EmailService{client: c}
+	c.EmailDeployments = &EmailDeploymentService{client: c}
 	c.EmailFolders = &EmailFolderService{client: c}
 	c.EmailGroups = &EmailGroupService{client: c}
 	c.EmailHeaders = &EmailHeaderService{client: c}
