@@ -402,9 +402,11 @@ func checkResponse(r *Response) error {
 
 // HTMLContent represents the htmlContent model of an Eloqua email or landing page object
 type HTMLContent struct {
-	Type          string `json:"type,omitempty"`
-	ContentSource string `json:"contentSource,omitempty"`
-	HTML          string `json:"html,omitempty"`
+	Type           string `json:"type,omitempty"`
+	ContentSource  string `json:"contentSource,omitempty"`
+	HTML           string `json:"html,omitempty"`
+	EmailFooterID  int    `json:"emailFooterId,omitempty,string"`
+	EmailHeaderID  int    `json:"emailHeaderId,omitempty,string"`
 }
 
 // FieldValue represents the structure in which custom field values are passed
