@@ -31,7 +31,7 @@ type EmailDeployment struct {
 	EndAt	                string           `json:"endAt,omitempty,string"`
 	FailedSendCount       string           `json:"failedSendCount,omitempty"`
 	FolderId              string           `json:"folderId,omitempty"`
-	ID                    string           `json:"id,omitempty,string"`
+	ID                    int              `json:"id,omitempty,string"`
 	Name                  string           `json:"name,omitempty,string"`
 	Permissions           []string         `json:"permissions,omitempty"`
 	ScheduledFor          string           `json:"scheduledFor,omitempty"`

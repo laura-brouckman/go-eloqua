@@ -16,7 +16,7 @@ type EmailService struct {
 type Email struct {
 	Type                string           `json:"type,omitempty"`
 	CurrentStatus       string           `json:"currentStatus,omitempty"`
-	ID                  string           `json:"id,omitempty,string"`
+	ID                  int              `json:"id,omitempty,string"`
 	CreatedAt           int              `json:"createdAt,omitempty,string"`
 	CreatedBy           int              `json:"createdBy,omitempty,string"`
 	Depth               string           `json:"depth,omitempty"`
