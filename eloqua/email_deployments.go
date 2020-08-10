@@ -21,7 +21,7 @@ type SendOptions struct {
 type EmailDeployment struct {
 	AccessedAt            string           `json:"accessedAt,omitempty"`
 	ContactId             string           `json:"contacdId,omitempty,string"`
-	ContactIds            []string         `json:"contacdIds,omitempty"`
+	Contacts            	[]Contact        `json:"contacdIds,omitempty"`
 	CreatedAt             string           `json:"createdAt,omitempty"`
 	CreatedBy             string           `json:"createdBy,omitempty,string"`
 	CurrentStatus         string           `json:"currentStatus,omitempty,string"`
