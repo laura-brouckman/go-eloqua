@@ -36,7 +36,7 @@ type Email struct {
 	FieldMerges         []FieldMerge     `json:"fieldMerges,omitempty"`
 	HTMLContent         HTMLContent      `json:"htmlContent,omitempty"`
 	Hyperlinks          []Hyperlink      `json:"hyperlinks,omitempty"`
-	IsPlainTextEditable bool					   `json:"isPlainTextEditable,omitempty"`
+	IsPlainTextEditable bool					   `json:"isPlainTextEditable,omitempty,string"`
 	Images              []Image          `json:"images,omitempty"`
 	LandingPages        []LandingPage    `json:"landingPages,omitempty"`
 	Tracked             bool             `json:"isTracked,omitempty,string"`

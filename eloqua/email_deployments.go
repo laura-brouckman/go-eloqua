@@ -19,29 +19,10 @@ type SendOptions struct {
 
 // EmailDeployment represents an Eloqua email deployment object.
 type EmailDeployment struct {
-	AccessedAt            string           `json:"accessedAt,omitempty"`
-	ContactId             string           `json:"contacdId,omitempty,string"`
-	Contacts            	[]Contact        `json:"contacdIds,omitempty"`
-	CreatedAt             string           `json:"createdAt,omitempty"`
-	CreatedBy             string           `json:"createdBy,omitempty,string"`
-	CurrentStatus         string           `json:"currentStatus,omitempty,string"`
-	Depth                 string           `json:"depth,omitempty,string"`
-	Description           string           `json:"description,omitempty"`
-	Email                 *Email           `json:"email,omitempty"`
-	EndAt	                string           `json:"endAt,omitempty,string"`
-	FailedSendCount       string           `json:"failedSendCount,omitempty"`
-	FolderId              string           `json:"folderId,omitempty"`
-	ID                    int              `json:"id,omitempty,string"`
-	Name                  string           `json:"name,omitempty,string"`
-	Permissions           []string         `json:"permissions,omitempty"`
-	ScheduledFor          string           `json:"scheduledFor,omitempty"`
-	SentContent           string           `json:"sentContent,omitempty"`
-	SendOptions           *SendOptions     `json:"sendOptions,omitempty"` 
-	SourceTemplateId      string           `json:"sourceTemplateId,omitempty,string"`
-	SuccessfulSendCount   string           `json:"successfulSendCount,omitempty,string"`
-	Type                  string           `json:"type,omitempty,string"`
-	UpdatedAt             string           `json:"updatedAt,omitempty,string"`
-	UpdatedBy             string           `json:"updatedBy,omitempty"`
+	ContactId             int           `json:"contactId,omitempty,string"`
+	Email                 Email         `json:"email,omitempty"`
+	Name                  string        `json:"name,omitempty,string"`
+	Type                  string        `json:"type,omitempty,string"`
 }
 
 // Create and send a new email deployment in eloqua
