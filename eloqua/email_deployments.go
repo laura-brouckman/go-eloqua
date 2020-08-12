@@ -21,8 +21,8 @@ type SendOptions struct {
 type EmailDeployment struct {
 	ContactId             int           `json:"contactId,omitempty,string"`
 	Email                 Email         `json:"email,omitempty"`
-	Name                  string        `json:"name,omitempty,string"`
-	Type                  string        `json:"type,omitempty,string"`
+	Name                  string        `json:"name,omitempty"`
+	Type                  string        `json:"type,omitempty"`
 }
 
 // Create and send a new email deployment in eloqua
